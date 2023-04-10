@@ -1,0 +1,53 @@
+.product-list-item {
+    position: relative;
+}
+.desc {
+    margin-top: 10px;
+    border: 1px solid;
+    padding: 10px;
+    display: none;
+    border-radius: 7px;
+    z-index: 1;
+    position:absolute;
+    background-color: aliceblue;
+}
+
+.product-list-item:hover > .desc, .product-list-item:focus > .desc, .product-list-item:active > .desc{
+    display: none;
+        display: var(--fye);
+}
+
+#fromyoureyesapp {
+    position:fixed;
+    border-radius: 100%;
+    border: 0px solid;
+    background-color:antiquewhite;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    bottom: 0px;
+    right: 0px;
+}
+
+#fromyoureyesapp > img {
+    filter: invert(48%) brightness(100%);
+    
+    width: 50px;
+    
+}
+
+#fromyoureyesapp:hover {
+    background-color: rgb(230, 230, 230);;
+
+    filter: unset;
+    transition: all 0.2s ease-in-out;
+
+}
+
+#fromyoureyesapp:hover > img {
+    transition: all 0.2s ease-in-out;
+
+    filter: unset;
+}
