@@ -4,6 +4,9 @@ let fye = false;
 let btn = document.getElementById("fromyoureyesapp")
 let nodeList = document.querySelectorAll(".desc");
 let elements = Array.from(nodeList);
+elements.forEach((element) => {
+    element.style.setProperty('--fye', 'none');
+  });
 function fromyoureyes() {
     console.log(fye);
     if(fye == false) {
@@ -15,8 +18,8 @@ function fromyoureyes() {
     }
     else {
         fye = false;
+        btn.style.backgroundColor= "antiquewhite";
         elements.forEach((element) => {
-            btn.style.backgroundColor= "antiquewhite";
             element.style.setProperty('--fye', 'none');
           });
 
