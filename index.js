@@ -4,7 +4,6 @@ let fye = false;
 let btn = document.getElementById("fromyoureyesapp")
 let nodeList = document.querySelectorAll(".desc");
 let elements = Array.from(nodeList);
-console.log(elements);
 function fromyoureyes() {
     console.log(fye);
     if(fye == false) {

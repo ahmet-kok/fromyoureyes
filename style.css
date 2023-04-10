@@ -13,8 +13,8 @@
 }
 
 .product-list-item:hover > .desc, .product-list-item:focus > .desc, .product-list-item:active > .desc{
+    display: var(--fye);
     display: none;
-        display: var(--fye);
 }
 
 #fromyoureyesapp {
